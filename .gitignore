@@ -65,3 +65,7 @@ Folder.DotSettings.user
 .idea/.idea.GRPCPrototype/.idea/encodings.xml
 .idea/.idea.GRPCPrototype/.idea/.name
 .idea/.idea.GRPCPrototype/.idea/vcs.xml
+# Ignore everything in wwwroot
+GRPCPrototype.Web/wwwroot/**/*
+# Except .gitkeep
+!GRPCPrototype.Web/wwwroot/.gitkeep

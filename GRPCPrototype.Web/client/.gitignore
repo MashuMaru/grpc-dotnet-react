@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore Vite build output
-wwwroot/*
+# Ignore Vite build output in the backend wwwroot folder
+GRPCPrototype.Web/wwwroot/*
+!GRPCPrototype.Web/wwwroot/.gitkeep

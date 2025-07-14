@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <Target Name="PrepublishFrontend" BeforeTargets="Build">
-    <Exec Command="npm install" WorkingDirectory="..\\GRPCPrototype.UI" />
-    <Exec Command="npm run build" WorkingDirectory="..\\GRPCPrototype.UI" />
+    <Exec Command="npm install" WorkingDirectory="client" />
+    <Exec Command="npm run build" WorkingDirectory="client" />
   </Target>
 
 </Project>

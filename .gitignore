@@ -60,3 +60,7 @@ obj/
 # React
 node_modules/
 dist/
+Folder.DotSettings.user
+.idea/.idea.GRPCPrototype/.idea/indexLayout.xml
+.idea/.idea.GRPCPrototype/.idea/encodings.xml
+.idea/.idea.GRPCPrototype/.idea/.name

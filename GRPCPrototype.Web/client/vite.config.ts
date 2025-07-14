@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: path.resolve(__dirname, '../GRPCPrototype.Web/wwwroot'),
+    outDir: path.resolve(__dirname, '../wwwroot'),
     emptyOutDir: true, // clears wwwroot before each build
   },
   server: {

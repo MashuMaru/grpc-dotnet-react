@@ -38,9 +38,9 @@ export interface HelloReply {
  */
 export interface Complex {
     /**
-     * @generated from protobuf field: int32 id = 1
+     * @generated from protobuf field: string id = 1
      */
-    id: number;
+    id: string;
     /**
      * @generated from protobuf field: string name = 2
      */
@@ -155,14 +155,14 @@ export const HelloReply = new HelloReply$Type();
 class Complex$Type extends MessageType<Complex> {
     constructor() {
         super("greeter.Complex", [
-            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 1, name: "id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 3, name: "date", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
     create(value?: PartialMessage<Complex>): Complex {
         const message = globalThis.Object.create((this.messagePrototype!));
-        message.id = 0;
+        message.id = "";
         message.name = "";
         message.date = "";
         if (value !== undefined)
@@ -174,8 +174,8 @@ class Complex$Type extends MessageType<Complex> {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int32 id */ 1:
-                    message.id = reader.int32();
+                case /* string id */ 1:
+                    message.id = reader.string();
                     break;
                 case /* string name */ 2:
                     message.name = reader.string();
@@ -195,9 +195,9 @@ class Complex$Type extends MessageType<Complex> {
         return message;
     }
     internalBinaryWrite(message: Complex, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-        /* int32 id = 1; */
-        if (message.id !== 0)
-            writer.tag(1, WireType.Varint).int32(message.id);
+        /* string id = 1; */
+        if (message.id !== "")
+            writer.tag(1, WireType.LengthDelimited).string(message.id);
         /* string name = 2; */
         if (message.name !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.name);

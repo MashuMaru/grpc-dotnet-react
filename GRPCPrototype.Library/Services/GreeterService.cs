@@ -14,7 +14,7 @@ public class GreeterService : IGreeterService
             Message = $"Hello, {request.Name}! Your name is {request.Name.Length} characters long!",
             Complex = new Complex
             {
-                Id = 1,
+                Id = Guid.NewGuid().ToString(),
                 Name = request.Name + " Doe",
                 Date = DateTime.UtcNow.ToLongDateString()
             }

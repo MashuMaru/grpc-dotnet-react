@@ -41,7 +41,7 @@ function App() {
         React.createElement("h1", null, "Vite + React + .NET + gRPC"),
         React.createElement("div", { className: "card" },
             React.createElement("input", { type: "text", placeholder: "Enter name", value: name, onChange: (e) => setName(e.target.value), disabled: loading }),
-            React.createElement("button", { onClick: handleSayHello, disabled: loading }, loading ? 'Loading...' : 'Send via gRPC one to three')),
+            React.createElement("button", { onClick: handleSayHello, disabled: loading }, loading ? 'Loading...' : 'Send via gRPC')),
         React.createElement("div", { className: "result" }, message && React.createElement("p", null,
             React.createElement("strong", null, "Message:"),
             " ",

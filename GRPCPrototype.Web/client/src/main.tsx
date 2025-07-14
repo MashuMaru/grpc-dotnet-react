@@ -7,7 +7,7 @@ import App from "./App";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <ToastContainer position="top-right" />
+      <ToastContainer />
       <App />
   </StrictMode>,
 )

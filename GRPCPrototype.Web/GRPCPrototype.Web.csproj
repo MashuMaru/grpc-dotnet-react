@@ -15,6 +15,10 @@
     <ProjectReference Include="..\GRPCPrototype.Library\GRPCPrototype.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
   <Target Name="PrepublishFrontend" BeforeTargets="Build">
     <Exec Command="npm install" WorkingDirectory="client" />
     <Exec Command="npm run build" WorkingDirectory="client" />

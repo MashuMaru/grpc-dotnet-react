@@ -1,0 +1,1 @@
+{"root":["../src/vite-env.d.ts","../src/generated/greeter.client.ts","../src/generated/greeter.ts","../src/grpc-services/grpcservice.ts","../src/app.tsx","../src/main.tsx"],"version":"5.8.3"}
